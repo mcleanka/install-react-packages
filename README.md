@@ -1,4 +1,4 @@
-# creating react app start kit without using npm
+# Creating react app start kit without using npm
 - Create package.json file
 ```bash
 npm init -y
