@@ -81,3 +81,4 @@ module.exports = {
 	"build": "webpack --mode production"
 },
 ```
+- Create /root/my-react-app/src/index.js
