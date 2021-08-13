@@ -74,3 +74,10 @@ module.exports = {
 	],
 };
 ```
+- Copy paste below code in package.json file under "scripts"
+```json
+"scripts": {
+	"dev": "webpack --mode development --watch",
+	"build": "webpack --mode production"
+},
+```
