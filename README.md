@@ -26,3 +26,17 @@ npm install @material-ui/icons
 ```bash
 npm install react-router-dom
 ```
+- Create babel.config.json file paste
+```json
+{
+	"presets": [
+		"@babel/preset-env",
+		{
+			"targets": {
+				"node": "10"
+			}
+		}
+	],
+	"plugins": ["@babel/plugin-proposal-class-properties"]
+}
+```
