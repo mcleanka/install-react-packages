@@ -30,25 +30,27 @@ npm install react-router-dom
 ```json
 {
 	"presets": [
-		"@babel/preset-env",
-		{
+		"@babel/preset-react",
+		"@babel/preset-env"
+		/* {
 			"targets": {
 				"node": "10"
 			}
-		}
+		} */
 	],
 	"plugins": ["@babel/plugin-proposal-class-properties"]
 }
+
 ```
 - Create webpack.config.js file paste
 ```js
-const path = require("path")
-const webpack = require("webpack")
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
 	entry: "./src/index.js",
 	output: {
-		path: path.resolve(__dirname, "./path/to/frontend/root/"),
+		path: path.resolve(__dirname, "./static/frontend"),
 		filename: "[name].js",
 	},
 	module: {
@@ -68,7 +70,8 @@ module.exports = {
 	plugins: [
 		new webpack.DefinePlugin({
 			"process.env": {
-				NODE_ENV: JSON.stringify("production"),
+				// This has effect on the react lib size
+				NODE_ENV: JSON.stringify("development"),
 			},
 		}),
 	],
