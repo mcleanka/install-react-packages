@@ -88,3 +88,7 @@ module.exports = {
 ```
 /path/to/my-app/src/index.js
 ```
+- Run
+```bash
+npm run dev
+```
